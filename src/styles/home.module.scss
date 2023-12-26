@@ -1,0 +1,280 @@
+@import "variables";
+@import "mixing";
+
+.categories_list_wrapper {
+    .line_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-size: 15px;
+            color: #789909;
+        }
+        a {
+            font-size: 15px;
+            color: #789909;
+            text-decoration: none;
+        }
+    }
+    .cat_style {
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            li {
+                width: 120px;
+                text-align: center;
+                &:first-child {
+                    margin-left: 0;
+                }
+                p {
+                    color: #2C3D02;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.hot_deal_section_wrapper {
+    margin-top: 24px;
+    .filter_section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+        .filter {
+            display: flex;
+            p {
+                margin: 0 0 0 16px;
+                color: #789909;
+            }
+        }
+        .sort {
+            display: flex;
+            cursor: pointer;
+            p {
+                margin: 0 16px 0 0;
+                color: #789909;
+            }
+        }
+    }
+    .hot_now_section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        .hot_now {
+            // width: 10%;
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 15px;
+                color: #FF0967;
+                font-weight: 600;
+                margin: 0 0 0 10px;
+                &.Dispen {
+                    color: #2C3D02;
+                }
+            }
+        }
+        .border {
+            width: 84%;
+            height: 1px;
+            background: rgba($color: #7A8066, $alpha: 0.5);
+
+        }
+        a {
+            font-size: 15px;
+            color: #789909;
+            text-decoration: none;
+            // width: 10%;
+        }
+    }
+}
+
+.product_list_wrapper {
+    width: 94%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    .product_card {
+        width: 24%;
+        // min-height: 275px;
+        border: 2px solid #ABE900;
+        border-radius: 26px;
+        position: relative;
+        overflow: hidden;
+        .brand {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 999;
+            color: #2C3D02;
+            background: #ABE900;
+            border-radius: 50px;
+            padding: 5px 12px;
+            font-weight: bold;
+            font-size: 9px;
+        }
+        .image_box {
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
+        .price_bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            margin-bottom: 10px;
+            .rate {
+                display: flex;
+                align-items: center;
+                h4 {
+                    color: #789909;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                img {
+                    margin: 0 5px;
+                }
+                .count {
+                    font-size: 9px;
+                    color: #789909;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+            .price {
+                p {
+                    font-size: 13px;
+                    margin: 0;
+                    font-weight: 600;
+                }
+            }
+        }
+        .content {
+            background: #ABE900;
+            height: 110px;
+            padding: 15px;
+            a {
+                text-decoration: none;
+            }
+            .lable {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                label {
+                    color: #789909;
+                    background: #fff;
+                    font-size: 9px;
+                    margin: 0 5px;
+                    padding: 3px 10px;
+                    border-radius: 8px;
+                }
+            }
+            h2 {
+                font-size: 20px;
+                color: #2C3D02;
+                margin: 10px 0;
+            }
+            .found {
+                color: #789909;
+                font-size: 9px;
+            }
+        }
+    }
+}
+.dispensaries_list {
+    width: 94%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  padding: 20px 0 50px;
+    .dispen_box {
+        width:19%;
+        // min-height: 275px;
+        border: 2px solid #ABE900;
+        border-radius: 26px;
+        position: relative;
+        overflow: hidden;
+        .brand {
+            // position: absolute;
+            // top: 10px;
+            // left: 10px;
+            z-index: 999;
+            color: #2C3D02;
+            background: #ABE900;
+            border-radius: 50px;
+            padding: 5px 12px;
+            font-weight: bold;
+            font-size: 9px;
+            margin: 10px auto;
+            display: block;
+            width: 60px;
+        }
+        .img_box {
+            position: relative;
+            img {
+                margin: 0 auto;
+                display: block;
+                border-radius: 50%;
+            }
+        }
+        .content {
+            padding: 15px;
+            h2 {
+                font-size: 20px;
+                color: #2C3D02;
+                margin: 10px 0;
+            }
+            .miles {
+                color: #789909;
+                font-size: 9px;
+                margin-top: 10px;
+            }
+            .location {
+                display: flex;
+                align-items: center;
+                p {
+                    color: #789909;
+                    font-size: 9px;
+                    margin: 0 0 0 10px;
+                }
+            }
+            .rate {
+                display: flex;
+                align-items: center;
+                h4 {
+                    color: #789909;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                img {
+                    margin: 0 5px;
+                }
+                .count {
+                    font-size: 9px;
+                    color: #789909;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+        
+    }
+}
